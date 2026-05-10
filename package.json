@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
+  "name": "coding-magic",
+  "version": "1.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://MykhailoGaber.github.io/Project-semester_3",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /Project-semester_3/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/MykhailoGaber/Project-semester_3.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Mykhailo Gaber <mishagaber0710@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/MykhailoGaber/Project-semester_3/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
