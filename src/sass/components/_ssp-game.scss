@@ -7,10 +7,12 @@
   flex-direction: column;
   position: relative;
   padding-bottom: 36px;
+  font-family: var(--font-main);
 }
 
-.game-id_3 h2 {
+.game-id_3 h3 {
   color: var(--color-text-primary);
+  font-size: 16;
 }
 
 .area {

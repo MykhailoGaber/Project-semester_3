@@ -1,11 +1,11 @@
-@import './common';
+@import './global/common';
 @import './utils/variables';
 @import './global/reset';
 @import './global/common';
 @import './global/base';
 
 //  Наші стилі
-@import './components/random_game.scss';
-@import './components/ssp-game.scss';
+@import './components/random_game';
+@import './components/ssp-game';
 //футер
-@import './components/footer.scss';
+@import './components/footer';
