@@ -1,0 +1,13 @@
+// Шрифти
+$font-main: 'Montserrat Alternates', sans-serif;
+// Кольори
+:root {
+  --font-main: #{$font-main};
+  --color-bg-primary: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-tertiary: #7e7e7e;
+  --color-text-success: #039900;
+  --color-text-fail: #990000;
+  --color-text-bg: #d7d7d7;
+  --color-field-bg: #5abb58;
+}
