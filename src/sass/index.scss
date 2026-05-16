@@ -1,2 +1,7 @@
-@import './common';
-@import './random_game';
+@import './utils/variables';
+@import './global/reset';
+@import './global/common';
+@import './global/base';
+
+//  Наші стилі
+@import './components/ssp-game.scss';
