@@ -1,3 +1,5 @@
+import { randomGame } from './games/random_number_game.js';
+// import { soccerGame } from './games/soccer_game.js';
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
 export const games = [
@@ -8,6 +10,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: randomGame,
     id: 2,
     name: 'Вгадай число',
     category: 'numerical',
@@ -34,6 +37,7 @@ export const games = [
     category: 'game',
   },
   {
+    // init: soccerGame,
     id: 7,
     name: 'Футбол',
     category: 'game',
