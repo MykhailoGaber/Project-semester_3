@@ -1,5 +1,5 @@
 import { games } from './data/data_games.js';
-
+import { soccerGame } from './data/games/soccer.js';
 const gamesContainer = document.querySelector('[data-games]');
 
 const renderGames = (games, container) => {

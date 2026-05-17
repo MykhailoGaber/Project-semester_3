@@ -1,3 +1,5 @@
+import { soccerGame } from './games/soccer';
+
 // import { initTestGame } from './games/test_game.js';
 export const games = [
   {
@@ -32,6 +34,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: soccerGame,
     id: 7,
     name: 'Футбол',
     category: 'game',
