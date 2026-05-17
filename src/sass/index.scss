@@ -1,5 +1,13 @@
+@import './global/common';
 @import './utils/variables';
 @import './global/reset';
 @import './global/common';
 @import './global/base';
-@import './components/header.scss';
+
+// header
+@import './components/header';
+//  Наші стилі
+@import './components/random_game';
+@import './components/ssp-game';
+//футер
+@import './components/footer';

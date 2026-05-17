@@ -1,0 +1,91 @@
+.game-id_3 {
+  margin: 0 auto;
+  background-color: var(--color-bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 36px;
+  font-family: var(--font-main);
+}
+
+.game-id_3 h3 {
+  color: var(--color-text-primary);
+  font-size: 16;
+}
+
+.area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0;
+}
+
+.btns-container {
+  position: relative;
+  display: flex;
+  gap: 38px;
+}
+.score-container {
+  position: absolute;
+  left: 50%;
+  padding-left: calc(256px / 2 + 104px);
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-ssp {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-color: var(--color-text-primary);
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.btn-stone {
+  font-size: 0;
+  color: transparent;
+  background-image: url(../images/stone.png);
+}
+
+.btn-scissors {
+  font-size: 0;
+  color: transparent;
+  background-image: url(../images/scissors.png);
+}
+
+.btn-paper {
+  font-size: 0;
+  color: transparent;
+  background-image: url(../images/paper.png);
+  border: 1px solid transparent;
+}
+
+.result {
+  padding-bottom: 36px;
+}
+
+.btn-check {
+  width: 182px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  cursor: pointer;
+}
+
+.game-id_3::after {
+  position: absolute;
+  content: '';
+  width: 536px;
+  height: 1px;
+  background-color: var(--color-text-primary);
+  bottom: 0;
+}
