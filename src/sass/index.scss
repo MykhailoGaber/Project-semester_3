@@ -1,7 +1,12 @@
+// @import './common';
+
 @import './utils/variables';
 @import './global/reset';
 @import './global/common';
 @import './global/base';
 @import './components/random_game';
 //  Наші стилі
+@import './components/random_game.scss';
 @import './components/ssp-game.scss';
+//футер
+@import './components/footer.scss';
