@@ -22,6 +22,13 @@
   visibility: visible;
   text-align: center;
   box-shadow: 3px 3px 0px 0px grey;
+  transition: 0.3s ease;
+}
+
+.calc-number:hover,
+.calc-number:focus {
+  box-shadow: 4px 3px 5px 0px grey;
+  background-color: #d4d4d4;
 }
 
 .calc-list {
@@ -44,6 +51,11 @@
   color: var(--color-bg-primary);
   display: flex;
   text-align: center;
+  transition: 0.3s ease;
+}
+
+.calc-button-style:hover {
+  box-shadow: 4px 3px 5px 0px grey;
 }
 
 .calc-text-result {
@@ -52,6 +64,11 @@
   padding: 10px 20px;
   border-radius: 20px;
   text-align: center;
+  transition: 0.3s ease;
+}
+
+.calc-text-result:hover {
+  background-color: #b7b6b6;
 }
 
 .game-id_4::after {
