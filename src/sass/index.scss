@@ -1,2 +1,13 @@
-@import './common';
-@import './soccer';
+@import './global/common';
+@import './utils/variables';
+@import './global/reset';
+@import './global/common';
+@import './global/base';
+// header
+@import './components/header';
+//  Наші стилі
+@import './components/soccer_game';
+@import './components/random_game';
+@import './components/ssp-game';
+//футер
+@import './components/footer';
