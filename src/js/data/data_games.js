@@ -24,6 +24,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: calculatorGame,
     id: 4,
     name: 'Калькулятор',
     category: 'numerical',
