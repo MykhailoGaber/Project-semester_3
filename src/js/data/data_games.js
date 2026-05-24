@@ -2,6 +2,7 @@ import { randomGame } from './games/random_number_game.js';
 // import { soccerGame } from './games/soccer_game.js';
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
+import { calculatorGame } from './games/calculator_game.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
 
 export const games = [

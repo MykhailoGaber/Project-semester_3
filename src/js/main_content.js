@@ -12,9 +12,9 @@ const renderGames = (games, container) => {
         </div>
       </div>
     </section>`;
-    acc.push(gameHTML);
+    acc += gameHTML;
     return acc;
-  }, []);
+  }, '');
 
   container.innerHTML = html;
   games.forEach(game => {
