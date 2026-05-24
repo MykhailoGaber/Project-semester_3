@@ -1,5 +1,7 @@
+import { soccerGame } from './games/soccer_game.js';
+
 import { randomGame } from './games/random_number_game.js';
-// import { soccerGame } from './games/soccer_game.js';
+
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
 import { calculatorGame } from './games/calculator_game.js';
@@ -41,7 +43,7 @@ export const games = [
     category: 'game',
   },
   {
-    // init: soccerGame,
+    init: soccerGame,
     id: 7,
     name: 'Футбол',
     category: 'game',
