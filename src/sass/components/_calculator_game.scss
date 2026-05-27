@@ -1,0 +1,82 @@
+.game-id_4 {
+  position: relative;
+  padding-bottom: 36px;
+}
+
+.calc-title {
+  margin-bottom: 36px;
+}
+
+.calc-div {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  align-items: center;
+}
+
+.calc-number {
+  color: var(--color-text-tertiary);
+  background-color: var(--color-text-bg);
+  padding: 10px 20px;
+  border-radius: 20px;
+  visibility: visible;
+  text-align: center;
+  box-shadow: 3px 3px 0px 0px grey;
+  transition: 0.3s ease;
+}
+
+.calc-number:hover,
+.calc-number:focus {
+  box-shadow: 4px 3px 5px 0px grey;
+  background-color: #d4d4d4;
+}
+
+.calc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 70px;
+}
+
+.calc-item {
+  flex-basis: calc((100% - 10px) / 2);
+  cursor: pointer;
+}
+
+.calc-button-style {
+  background-color: var(--color-text-primary);
+  padding: 5px 10px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  color: var(--color-bg-primary);
+  display: flex;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.calc-button-style:hover {
+  box-shadow: 4px 3px 5px 0px grey;
+}
+
+.calc-text-result {
+  color: var(--color-text-tertiary);
+  background-color: var(--color-text-bg);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.calc-text-result:hover {
+  background-color: #b7b6b6;
+}
+
+.game-id_4::after {
+  content: '';
+  position: absolute;
+
+  width: 536px;
+  height: 1px;
+  background-color: var(--color-text-primary);
+  bottom: 0;
+}

@@ -1,8 +1,13 @@
+import { soccerGame } from './games/soccer_game.js';
+
 import { randomGame } from './games/random_number_game.js';
-// import { soccerGame } from './games/soccer_game.js';
+
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
 import { gameDinoInit } from './games/dinogame.js';
+import { calculatorGame } from './games/calculator_game.js';
+import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
+
 export const games = [
   {
     // init: initTestGame,
@@ -23,6 +28,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: calculatorGame,
     id: 4,
     name: 'Калькулятор',
     category: 'numerical',
@@ -39,7 +45,7 @@ export const games = [
     category: 'game',
   },
   {
-    // init: soccerGame,
+    init: soccerGame,
     id: 7,
     name: 'Футбол',
     category: 'game',
@@ -55,6 +61,7 @@ export const games = [
     category: 'acquaintance',
   },
   {
+    init: initScintistsSorting,
     id: 10,
     name: 'Вчений',
     category: 'acquaintance',
