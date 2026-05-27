@@ -2,6 +2,7 @@ import { randomGame } from './games/random_number_game.js';
 // import { soccerGame } from './games/soccer_game.js';
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
+import { gameDinoInit } from './games/dinogame.js';
 export const games = [
   {
     // init: initTestGame,
@@ -32,6 +33,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: gameDinoInit,
     id: 6,
     name: 'Google динозаврик',
     category: 'game',

@@ -16,7 +16,7 @@ const renderGames = (games, container) => {
     return acc;
   }, []);
 
-  container.innerHTML = html;
+  container.insertAdjacentHTML('beforeend', html.join(''));
   games.forEach(game => {
     if (game.init) {
       game.init();

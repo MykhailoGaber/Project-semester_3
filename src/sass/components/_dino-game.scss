@@ -1,0 +1,135 @@
+.dino-game {
+  max-width: 720px;
+  width: 100%;
+  margin: 2rem auto;
+  user-select: none;
+  font-family: var(--font-main);
+
+  .game__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .game__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--color-text-primary);
+    letter-spacing: 0.02em;
+  }
+
+  .game__area {
+    position: relative;
+    width: 100%;
+    height: 241px;
+    background: var(--color-bg-primary);
+    border-radius: 12px;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--color-text-primary);
+    }
+  }
+
+  .dino {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    width: 44px;
+    height: 47px;
+    z-index: 2;
+    image-rendering: pixelated;
+
+    body:has(#changeTheme:checked) & {
+      filter: invert(1);
+    }
+
+    &.dead {
+      opacity: 0.5;
+      filter: grayscale(1);
+
+      body:has(#changeTheme:checked) & {
+        filter: invert(1) grayscale(1);
+      }
+    }
+  }
+
+  .jump {
+    animation: dino-jump-anim 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+
+  @keyframes dino-jump-anim {
+    0%,
+    100% {
+      bottom: 40px;
+    }
+    50% {
+      bottom: 140px;
+    }
+  }
+
+  .cactus {
+    position: absolute;
+    bottom: 40px;
+    left: 100%;
+    width: 16px;
+    height: 32px;
+    background: var(--color-text-primary);
+    box-shadow: none;
+    border-radius: 2px;
+    z-index: 1;
+    animation-name: cactus-move-anim;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes cactus-move-anim {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100vw - 450px));
+    }
+  }
+
+  .dino__modal {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .dino__message {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: var(--color-text-primary);
+  }
+  .dino__start {
+    padding: 10px 24px;
+    background: var(--color-text-tertiary);
+    color: var(--color-bg-primary);
+    font-family: var(--font-main);
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #07b2c2d3;
+    }
+  }
+}
