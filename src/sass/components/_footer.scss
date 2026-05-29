@@ -73,15 +73,94 @@
   cursor: pointer;
   transition: opacity 0.2s;
 }
+.footer-subscribe p {
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  white-space: nowrap;
+  right: 650px;
+}
 
 .subscribe-form button:hover {
   opacity: 0.8;
 }
 
-.footer-subscribe p {
-  font-size: 11px;
-  color: var(--color-text-tertiary);
-  max-width: 254px;
-  line-height: 1.4;
-  white-space: nowrap;
+#subscribeModal {
+  position: relative;
+  width: 463px;
+  height: 245px;
+  border: none;
+  border-radius: 20px;
+  padding: 0; /* Обнуляем, так как позиционируем всё по точным пикселям */
+}
+
+/* Контейнер для текста по твоим точным координатам из Figma */
+.modal-content {
+  position: absolute;
+  top: 69px;
+  left: 43px;
+  width: 378px;
+  height: 106px;
+
+  /* Центрируем текст строго внутри этого блока */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Сам текст внутри блока */
+.modal-title {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--color-header-list);
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Кнопка-крестик (остается на своем месте в углу карточки) */
+.close-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 10;
+}
+
+.decor-icon {
+  position: absolute;
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.icon-top-left {
+  top: 55px;
+  left: 45px;
+}
+
+.icon-top-right {
+  top: 55px;
+  right: 45px;
+}
+
+.icon-bottom-left {
+  bottom: 55px;
+  left: 95px;
+}
+
+.icon-bottom-right {
+  bottom: 55px;
+  right: 95px;
+}
+
+#modalka::backdrop {
+  background-color: var(--color-text-bg-secondary);
 }
