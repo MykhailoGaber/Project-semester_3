@@ -16,6 +16,7 @@ export const randomGame = () => {
             <div class="random_number__line"></div>
 `;
   gamesContainer.innerHTML = gameHtml;
+
   const min = 1;
   const max = 10;
   const randomInt = (min = 1, max = 10) => {
@@ -49,3 +50,5 @@ export const randomGame = () => {
   };
   button.addEventListener('click', handleClick);
 };
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
