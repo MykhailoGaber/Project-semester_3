@@ -1,3 +1,4 @@
+import dinogame from '../../../images/dinogame.png';
 class GameDino {
   constructor(dino, gameArea) {
     this.dino = dino;
@@ -138,8 +139,19 @@ class GameDino {
 }
 
 export const gameDinoInit = () => {
-  const container = document.querySelector('.dino-game');
+  const container = document.querySelector('.game-id_6');
   if (!container) return;
+
+  container.innerHTML = `
+    <div class="dino-game">
+      <div class="game__container">
+        <h2 class="game__title">Google динозавр</h2>
+        <div class="game__area">
+          <img class="dino" src="${dinogame}" alt="динозавр" />
+        </div>
+      </div>
+    </div>
+  `;
 
   const dino = container.querySelector('.dino');
   const gameArea = container.querySelector('.game__area');
