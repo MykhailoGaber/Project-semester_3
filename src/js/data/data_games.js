@@ -2,6 +2,7 @@
 import { soccerGame } from './games/soccer_game.js';
 import { randomGame } from './games/random_number_game.js';
 import { initSspGame } from './games/ssp_game.js';
+import { gameDinoInit } from './games/dinogame.js';
 import { calculatorGame } from './games/calculator_game.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
 import { initBonusGame } from './games/bomb-game.js';
@@ -37,6 +38,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: gameDinoInit,
     id: 6,
     name: 'Google динозаврик',
     category: 'game',

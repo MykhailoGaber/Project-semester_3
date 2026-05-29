@@ -18,6 +18,8 @@
     "url": "https://github.com/MykhailoGaber/Project-semester_3/issues"
   },
   "dependencies": {
+    "baseline-browser-mapping": "^2.10.30",
+    "caniuse-lite": "^1.0.30001793",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
