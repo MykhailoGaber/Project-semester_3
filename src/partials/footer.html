@@ -5,20 +5,71 @@
         <use href="./images/logo.svg"></use>
       </svg>
     </div>
+
     <div class="footer-contacts">
       <ul>
-        <li>Тел: +38 (123) 456 78 90</li>
-        <li>E-Mail: codingmagic@gmail.com</li>
-        <li>Facebook: CodingMagic</li>
-        <li>Twitter: CodingMagic</li>
-        <li>Instagram: CodingMagic</li>
+        <li>Тел: <a href="tel:+381234567890">+38 (123) 456 78 90</a></li>
+        <li>
+          E-Mail:
+          <a href="mailto:codingmagic@gmail.com">codingmagic@gmail.com</a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook: CodingMagic</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Twitter: CodingMagic</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram: CodingMagic</a
+          >
+        </li>
       </ul>
     </div>
+
     <div class="footer-subscribe">
-      <div class="subscribe-form">
-        <input type="email" placeholder="Ваша ел. адреса..." />
-        <button type="button">Підписатись</button>
-      </div>
+      <form class="subscribe-form" id="subscribeForm">
+        <input type="email" placeholder="Ваша ел. адреса..." required />
+        <button type="submit" id="openBtn">Підписатись</button>
+      </form>
+
+      <dialog id="subscribeModal">
+        <button type="button" id="closeBtn" class="close-modal-btn">
+          <img src="./images/krestik.svg" alt="Закрить" />
+        </button>
+
+        <img src="./images/sword.svg" alt="" class="decor-icon icon-top-left" />
+        <img
+          src="./images/script.svg"
+          alt=""
+          class="decor-icon icon-top-right"
+        />
+        <img
+          src="./images/puzzle.svg"
+          alt=""
+          class="decor-icon icon-bottom-left"
+        />
+        <img
+          src="./images/tictac.svg"
+          alt=""
+          class="decor-icon icon-bottom-right"
+        />
+        <div class="modal-content"><h2>Дякую за підписку!</h2></div>
+      </dialog>
+
       <p>
         *Підписавшись, Ви зможете оптимізувати інформацію про новини на сайті
       </p>
