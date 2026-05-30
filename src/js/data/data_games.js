@@ -5,6 +5,7 @@ import { randomGame } from './games/random_number_game.js';
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
 import { calculatorGame } from './games/calculator_game.js';
+import { ourTeam } from './games/students/students-section.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
 
 export const games = [
@@ -54,6 +55,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: ourTeam,
     id: 9,
     name: 'Наша команда',
     category: 'acquaintance',
