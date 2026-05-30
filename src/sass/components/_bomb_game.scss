@@ -1,0 +1,160 @@
+.game-id_8 {
+  width: 100%;
+  max-width: 720px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+.game__container {
+  max-width: 720px;
+  width: 100%;
+  font-family: var(--font-main);
+  margin: 0 auto;
+}
+
+.game__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  padding-bottom: 36px;
+  padding-top: 36px;
+  text-align: center;
+}
+
+.bomb-game__area {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid var(--color-text-primary);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bomb-game__hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-family: var(--font-main);
+  background-color: var(--color-text-bg);
+  border-bottom: 1px solid var(--color-text-primary);
+  font-size: 18px;
+}
+
+.bomb-hud__score {
+  color: var(--color-text-primary);
+}
+
+.bomb-game__field {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url(../images/bonus-game-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bomb {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/bomb.png);
+  background-size: contain;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bomb.explosion {
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/explosing.png);
+  background-repeat: no-repeat;
+  cursor: none;
+}
+.green-cristal {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/green-cristal.png);
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purple-cristal {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/purple-cristal.png);
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bomb,
+.green-cristal,
+.purple-cristal {
+  animation: becomingInvisible 2s linear;
+}
+
+@keyframes becomingInvisible {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+.bonus-game__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+
+.bonus-game__modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bonus-game__message {
+  font-family: var(--font-main);
+  color: var(--color-text-primary);
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bonus-game__start {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: var(--color-text-bg);
+  color: var(--color-text-primary);
+  border-radius: 4px;
+  cursor: pointer;
+}

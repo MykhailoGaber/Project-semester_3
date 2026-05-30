@@ -2,9 +2,9 @@ import { scientistsList } from './data_scientists.js';
 import { renderScientists } from './render-scientists.js';
 
 export const initScintistsSorting = () => {
-  const gameContainer = document.querySelector('.game-id_10');
+  const gameContainer = document.querySelector('.game-id_11');
   const gameHtml = `
-    <h3 class=".scientists-game-title">Обери вченого/их</h3>
+    <h3 class=".game__title">Обери вченого/их</h3>
     <section class="scintists">
       <div class="container">
         <div class="scientists__container" data-scintists></div>

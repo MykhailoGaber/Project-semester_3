@@ -2,7 +2,7 @@ export const calculatorGame = () => {
   const gamesContainer = document.querySelector('.game-id_4');
 
   const gameHtml = `
-  <h3 class="calc-title">Калькулятор</h3>
+  <h3 class="game__title">Калькулятор</h3>
 <div class="calc-div">
 <input
   class="calc-number calc-number-1" 

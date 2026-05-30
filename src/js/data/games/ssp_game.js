@@ -2,7 +2,7 @@ export const initSspGame = () => {
   const gameContainer = document.querySelector('.game-id_3');
 
   gameContainer.innerHTML = `
-<h3>Камінь - ножиці - папір</h3>
+<h3 class="game__title">Камінь - ножиці - папір</h3>
 
 <div class="area">
   <div class="btns-container">

@@ -1,12 +1,11 @@
-import { soccerGame } from './games/soccer_game.js';
-
-import { randomGame } from './games/random_number_game.js';
-
 // import { initTestGame } from './games/test_game.js';
+import { soccerGame } from './games/soccer_game.js';
+import { randomGame } from './games/random_number_game.js';
 import { initSspGame } from './games/ssp_game.js';
 import { gameDinoInit } from './games/dinogame.js';
 import { calculatorGame } from './games/calculator_game.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
+import { initBonusGame } from './games/bomb-game.js';
 
 export const games = [
   {
@@ -51,18 +50,24 @@ export const games = [
     category: 'game',
   },
   {
+    init: initBonusGame,
     id: 8,
+    name: 'Додаткова гра',
+    category: 'game',
+  },
+  {
+    id: 9,
     name: 'Найбільше число',
     category: 'numerical',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Наша команда',
     category: 'acquaintance',
   },
   {
     init: initScintistsSorting,
-    id: 10,
+    id: 11,
     name: 'Вчений',
     category: 'acquaintance',
   },
