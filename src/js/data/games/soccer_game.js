@@ -1,6 +1,6 @@
 import ball from '../../../images/ball.png';
 export const soccerGame = () => {
-  const gamesContainer = document.querySelector('.game-id_2');
+  const gamesContainer = document.querySelector('.game-id_7');
   const gameHtml = `
       <h3 class="soccer__title">Футбол</h3>
       <div class="soccer__field">
