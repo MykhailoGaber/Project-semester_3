@@ -194,14 +194,15 @@ class BombGame {
 }
 
 export const initBonusGame = () => {
-  const gameContainer = document.querySelector('.game-id_11');
+  const gameContainer = document.querySelector('.game-id_8');
 
   const gameHtml = `<div class="game__container">
         <h2 class="game__title">Bonus Game</h2>
         <div class="bomb-game__area">
         <div class="bomb-game__hud"></div>
             <div class="bomb-game__field"></div></div>
-    </div>`;
+    </div>
+    <div class="random_number__line"></div>`;
 
   gameContainer.innerHTML = gameHtml;
 

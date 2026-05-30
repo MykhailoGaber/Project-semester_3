@@ -50,25 +50,25 @@ export const games = [
     category: 'game',
   },
   {
+    init: initBonusGame,
     id: 8,
+    name: 'Додаткова гра',
+    category: 'game',
+  },
+  {
+    id: 9,
     name: 'Найбільше число',
     category: 'numerical',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Наша команда',
     category: 'acquaintance',
   },
   {
     init: initScintistsSorting,
-    id: 10,
+    id: 11,
     name: 'Вчений',
     category: 'acquaintance',
-  },
-  {
-    init: initBonusGame,
-    id: 11,
-    name: 'Додаткова гра',
-    category: 'game',
   },
 ];
