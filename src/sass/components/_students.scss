@@ -1,0 +1,55 @@
+.students_swiper {
+  // height: 377px;
+  width: 900px;
+  position: relative;
+}
+
+.students_img {
+  height: 150px;
+  width: 150px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  margin-top: 36px;
+}
+
+.students_name {
+  margin: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.students_title {
+  margin-bottom: 36px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 100px;
+  color: var(--color-text-primary);
+  top: 50px;
+  transform: translateY(-50%);
+  font-size: 40px;
+}
+
+.students_description {
+  margin-bottom: 28px;
+}
+
+.game-id_9 {
+  position: relative;
+}
+
+.game-id_9::after {
+  content: '';
+  position: absolute;
+
+  width: 536px;
+  height: 1px;
+  background-color: var(--color-text-primary);
+  bottom: 0;
+}
