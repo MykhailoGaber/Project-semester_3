@@ -3,7 +3,7 @@ import searchIcon from '../../../images/search-icon.png';
 export const randomGame = () => {
   const gamesContainer = document.querySelector('.game-id_2');
   const gameHtml = `
-    <h3 class="random_number__title">вгадай число,яке загадав комп'ютер</h3>
+    <h3 class="game__title">вгадай число,яке загадав комп'ютер</h3>
          <div class="random_number__inputTextContainer">
            <div class="random_number__input-container">
       <input type="number" id="random_number__input" placeholder="Введіть число " />
@@ -16,6 +16,7 @@ export const randomGame = () => {
             <div class="random_number__line"></div>
 `;
   gamesContainer.innerHTML = gameHtml;
+
   const min = 1;
   const max = 10;
   const randomInt = (min = 1, max = 10) => {
@@ -49,3 +50,5 @@ export const randomGame = () => {
   };
   button.addEventListener('click', handleClick);
 };
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

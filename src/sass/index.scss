@@ -5,11 +5,15 @@
 @import './global/base';
 // header
 @import './components/header';
+@import './components/modalheader';
 //  Наші стилі
-@import './components/soccer_game';
 @import './components/random_game';
 @import './components/ssp-game';
 @import './components/calculator_game';
+@import './components/dino-game';
+@import './components/soccer_game';
+@import './components/bomb_game';
+@import './components/students';
 @import './components/scientists';
 //футер
 @import './components/footer';
