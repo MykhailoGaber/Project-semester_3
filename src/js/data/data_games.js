@@ -1,7 +1,7 @@
 import { soccerGame } from './games/soccer_game.js';
 
 import { randomGame } from './games/random_number_game.js';
-
+import { maxNumberGame } from './games/max_number.js';
 // import { initTestGame } from './games/test_game.js';
 import { initSspGame } from './games/ssp_game.js';
 import { calculatorGame } from './games/calculator_game.js';
@@ -49,6 +49,7 @@ export const games = [
     category: 'game',
   },
   {
+    init: maxNumberGame,
     id: 8,
     name: 'Найбільше число',
     category: 'numerical',
