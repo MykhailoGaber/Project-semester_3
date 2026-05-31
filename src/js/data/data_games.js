@@ -59,7 +59,7 @@ export const games = [
     category: 'game',
   },
   {
-    init: maxNumberGame,
+    // init: maxNumberGame,
     id: 9,
     name: 'Найбільше число',
     category: 'numerical',
