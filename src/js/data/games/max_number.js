@@ -1,5 +1,5 @@
 export const maxNumberGame = () => {
-    const gamesContainer = document.querySelector('.game-id_8');
+    const gamesContainer = document.querySelector('.game-id_9');
     const gameHtml =`<div class="container">
   <h1 class="title">Введіть 3 числа</h1>
   
