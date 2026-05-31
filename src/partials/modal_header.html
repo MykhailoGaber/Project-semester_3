@@ -1,0 +1,41 @@
+<dialog id="nameModal" open>
+  <button type="button" id="closeNameBtn" class="close-btn">
+    <img src="./images/krestik.svg" alt="Закрить" />
+  </button>
+
+  <div class="decor-icon top-left">
+    <img src="./images/sword.svg" alt="sword" />
+  </div>
+  <div class="decor-icon top-right">
+    <img src="./images/script.svg" alt="gamepad" />
+  </div>
+  <div class="decor-icon bottom-left">
+    <img src="./images/puzzle.svg" alt="puzzle" />
+  </div>
+  <div class="decor-icon bottom-right">
+    <img src="./images/tictac.svg" alt="tic-tac-toe" />
+  </div>
+
+  <form id="nameForm" method="dialog" class="modal-content">
+    <div class="modal-text">
+      <h2>Привіт!</h2>
+      <p>Ви потрапили на сайт інтерактивних ігор та завдань</p>
+      <p>Надіємось, що вам сподобається і ви отримаєте позитивні емоції!</p>
+      <p>Бажаємо Вам гарно провести час!</p>
+    </div>
+
+    <div class="input-group">
+      <label for="nameInput">Введіть своє ім’я:</label>
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Ваше ім’я..."
+        required
+        maxlength="20"
+        autocomplete="off"
+      />
+    </div>
+
+    <button type="submit" class="submit-btn">Зберегти</button>
+  </form>
+</dialog>
