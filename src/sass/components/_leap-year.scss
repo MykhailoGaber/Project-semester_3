@@ -1,29 +1,10 @@
-.container {
+.game-id_1 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.game {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 576px;
-  min-height: 120px;
-}
 
-.random_number__title {
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  width: 326px;
-  height: 20px;
-  margin-bottom: 36px;
-  text-align: center;
-}
-
-.random_number__inputTextContainer {
+.leap_year__inputTextContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,17 +12,17 @@
   width: 576px;
 }
 
-.random_number__input-container {
+.leap_year__input-container {
   display: flex;
   align-items: center;
-  max-width: 150px;
+  max-width: 215px;
   height: 35px;
   flex-shrink: 0;
   filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 }
 
-#random_number__input {
-  width: calc(150px - 35px);
+#leap_year__input {
+  width: 215px;
   height: 100%;
   background: #d7d7d7;
   border-radius: 20px 0 0 20px;
@@ -49,15 +30,16 @@
   padding-left: 10px;
   outline: none;
 }
+
 .label_text__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.random_number__label {
+.leap_year__label {
   display: flex;
   align-items: center;
-  background: #d7d7d7;
+  background: var(--color-text-tertiary);
   border-radius: 20px;
   width: 150px;
   height: 35px;
@@ -65,22 +47,7 @@
   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 
-.random_number__label input {
-  background: transparent;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 12px;
-  color: #7e7e7e;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0 10px;
-  margin-left: 0;
-}
-
-.random_number__button {
+.leap_year__button {
   width: 35px;
   height: 35px;
   flex-shrink: 0;
@@ -92,7 +59,7 @@
   margin-left: 0;
 }
 
-.random_number__img {
+.leap_year__img {
   width: 100%;
   height: 100%;
   border-radius: 0 20px 20px 0;
@@ -100,7 +67,7 @@
   object-fit: cover;
 }
 
-.random_number__gues {
+.leap_year__verification {
   font-family: var(--font-main);
   font-weight: 400;
   font-size: 14px;
@@ -109,19 +76,9 @@
   min-height: 15px;
   flex-shrink: 0;
 }
-.random_number__line {
+.leap_year__line {
   width: 536px;
   height: 1px;
   background-color: #000;
   margin-top: 36px;
-}
-
-.guess_number {
-  font-family: var(--font-main);
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
-  margin: 0;
-  width: 224px;
-  height: 15px;
 }
