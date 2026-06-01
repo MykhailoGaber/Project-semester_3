@@ -44,14 +44,23 @@ export const initSspGame = () => {
 
   buttonStone.addEventListener('click', () => {
     userChoice = 'stone';
+    buttonStone.classList.add('is_active');
+    buttonScissors.classList.remove('is_active');
+    buttonPaper.classList.remove('is_active');
   });
 
   buttonScissors.addEventListener('click', () => {
     userChoice = 'scissors';
+    buttonScissors.classList.add('is_active');
+    buttonStone.classList.remove('is_active');
+    buttonPaper.classList.remove('is_active');
   });
 
   buttonPaper.addEventListener('click', () => {
     userChoice = 'paper';
+    buttonPaper.classList.add('is_active');
+    buttonStone.classList.remove('is_active');
+    buttonScissors.classList.remove('is_active');
   });
 
   // Логіка
@@ -64,10 +73,15 @@ export const initSspGame = () => {
     const botChoice = botChoices[Math.floor(Math.random() * botChoices.length)];
     // console.log(botChoice);
 
+    buttonStone.classList.remove('is_active');
+    buttonScissors.classList.remove('is_active');
+    buttonPaper.classList.remove('is_active');
+
     let message = '';
 
     if (userChoice === botChoice) {
       message = 'Нічия!';
+      userChoice = '';
       resultContainer.textContent = message;
       resultContainer.style.color = '#000000';
     } else if (
@@ -75,12 +89,14 @@ export const initSspGame = () => {
       (userChoice === 'scissors' && botChoice === 'paper') ||
       (userChoice === 'paper' && botChoice === 'stone')
     ) {
+      userChoice = '';
       message = 'Ви виграли раунд!';
       userScore++;
       userInfo.textContent = userScore;
       resultContainer.textContent = message;
       resultContainer.style.color = '#039900';
     } else {
+      userChoice = '';
       message = 'Комп’ютер виграв раунд!';
       computerScore++;
       botInfo.textContent = computerScore;

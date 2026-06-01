@@ -62,6 +62,9 @@
   background-image: url(../images/paper.png);
   border: 1px solid transparent;
 }
+.is_active {
+  border: 3px solid #8acecf;
+}
 
 .result {
   padding-bottom: 36px;
