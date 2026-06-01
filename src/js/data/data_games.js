@@ -9,10 +9,10 @@ import { calculatorGame } from './games/calculator_game.js';
 import { ourTeam } from './games/students/students-section.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
 import { initBonusGame } from './games/bomb-game.js';
-
+import { initLeapYear } from './games/leap-year.js';
 export const games = [
   {
-    // init: initTestGame,
+    init: initLeapYear,
     id: 1,
     name: 'Високосний калькулятор',
     category: 'numerical',
