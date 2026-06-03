@@ -1,0 +1,16 @@
+main {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+[data-games] {
+  position: relative;
+  z-index: 10;
+  width: 75.69%;
+  margin: 0 auto;
+  background-color: var(--color-bg-primary);
+}
