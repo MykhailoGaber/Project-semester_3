@@ -19,13 +19,14 @@
 
 .logo {
   margin-right: 81px;
-  padding-right: calc(320px / 2 + 81px);
+  padding-right: calc(370px / 2 + 81px);
 }
 
 .info-title {
   font-size: 12px;
   font-weight: 400;
   transition: 0.3s ease;
+  min-width: 100px;
 }
 
 .game-type:hover .info-title {
@@ -50,6 +51,10 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.team-link {
+  min-width: 97px;
 }
 
 .info-title::after {
@@ -136,8 +141,9 @@
   transform: scale(0.9);
 }
 
-//=======...........INPUT..........===========
-
+.details-text {
+  min-width: 94px;
+}
 // select {
 // }
 
@@ -145,7 +151,53 @@
 //   appearance: base-select;
 //   border-radius: 0 0 30px 30px;
 // }
+// ||========================================TABLETTE============================================||
+@media screen and (max-width: 1024px) {
+  .header-div {
+    gap: 165px;
+  }
+  .info-list,
+  .details-list {
+    gap: 45px;
+  }
+  .header-icons {
+    margin: 0;
+  }
+  .logo {
+    margin: 0;
+  }
+}
+// ||========================================MOBILE============================================||
+@media screen and (max-width: 768px) {
+  .header-div {
+    gap: 65px;
+  }
+  // .info-title {
+  //   min-width: 100px;
+  // }
+  // .team-link {
+  //   min-width: 97px;
+  // }
+  .info-list,
+  .details-list {
+    gap: 20px;
+  }
+  // .details-text {
+  //   min-width: 94px;
+  // }
+  // .header-icons {
+  //   margin: 0;
+  // }
+  // .logo {
+  //   margin: 0;
+  // }
+  .icons {
+    width: 130px;
+    height: 55px;
+  }
+}
 
+//=======...........INPUT..........===========
 .changeTheme {
   display: inline-block;
   width: 40px;
