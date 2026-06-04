@@ -1,6 +1,6 @@
 .footer-container {
   max-width: 1440px;
-  height: 160px;
+  min-height: 160px;
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
@@ -73,11 +73,11 @@
   cursor: pointer;
   transition: opacity 0.2s;
 }
+
 .footer-subscribe p {
   font-size: 11px;
   color: var(--color-text-tertiary);
   white-space: nowrap;
-  right: 650px;
 }
 
 .subscribe-form button:hover {
@@ -85,12 +85,22 @@
 }
 
 #subscribeModal {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 463px;
   height: 245px;
   border: none;
   border-radius: 20px;
   padding: 0;
+  margin: 0;
+  transform-origin: center;
+  will-change: transform, opacity, filter;
+  animation: popIn 420ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+
+#subscribeModal.closing {
+  animation: smoothOut 250ms ease-in both;
 }
 
 .modal-content {
@@ -99,7 +109,6 @@
   left: 43px;
   width: 378px;
   height: 106px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,6 +166,103 @@
   right: 95px;
 }
 
-#modalka::backdrop {
-  background-color: var(--color-text-bg-secondary);
+#subscribeModal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  animation: backdropFadeIn 260ms cubic-bezier(0.2, 0.9, 0.3, 1) both;
+}
+
+#subscribeModal.closing::backdrop {
+  animation: backdropFadeOut 250ms ease both;
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    padding: 40px 24px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-contacts {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .footer-contacts {
+    order: 1;
+  }
+
+  .footer-contacts ul {
+    align-items: center;
+  }
+
+  .footer-subscribe {
+    order: 2;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 18px)) scale(0.96) rotate(-1.2deg);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(-50%, calc(-50% - 8px)) scale(1.03) rotate(0.6deg);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes smoothOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 15px)) scale(0.98);
+  }
+}
+
+@keyframes backdropFadeIn {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+@keyframes backdropFadeOut {
+  from {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
