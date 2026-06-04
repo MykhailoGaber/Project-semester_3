@@ -3,7 +3,10 @@
   width: 900px;
   position: relative;
 }
-
+.students_photo {
+  display: flex;
+  justify-content: center;
+}
 .students_img {
   height: 150px;
   width: 150px;
@@ -13,7 +16,7 @@
 }
 
 .students_name {
-  margin: 20px 0;
+  margin: 20px 0 15px 0;
 }
 
 .swiper-slide {
@@ -34,10 +37,36 @@
   top: 50px;
   transform: translateY(-50%);
   font-size: 40px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #397878a0;
+    transition: color 0.3s ease;
+  }
+}
+
+.swiper-button-prev {
+  transform: translate(0px, -65px);
+}
+.swiper-button-next {
+  transform: translate(0px, -65px);
 }
 
 .students_description {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 18px;
+  height: 3px;
+  color: var(--color-text-bg-secondary);
+  border-radius: 3px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 30px;
+  height: 3px;
+  background-color: #797979;
 }
 
 .game-id_10 {

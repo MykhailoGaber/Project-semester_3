@@ -1,18 +1,26 @@
+// import photo.. from "#"
+import photoMuhailo from '../../../../images/ourTeam/muhailo.png';
+import photoRenat from '../../../../images/ourTeam/renat.png';
+import photoSofia from '../../../../images/ourTeam/sofia.png';
+
 export const students = [
   {
-    photo: '#',
+    photo: photoMuhailo,
     name: 'Габер Михайло',
-    description: '#',
+    description:
+      '||Team Lead|| Зробив секції: bonus game, камінь ножиці папір і секцію вчених',
   },
   {
-    photo: '#',
+    photo: photoRenat,
     name: 'Кудицький Ренат',
-    description: '#',
+    description:
+      '||Scrum Master|| Зробив секції: header, Google динозавр + 2 модальних вікна',
   },
   {
-    photo: '#',
+    photo: photoSofia,
     name: 'Матійцо Софія',
-    description: '#',
+    description:
+      '||Developer|| Зробила секції: header, calculator та наша команда + перемикач темна тема  ',
   },
   {
     photo: '#',
