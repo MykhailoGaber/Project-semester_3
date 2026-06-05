@@ -4,7 +4,7 @@ import { games } from './data/data_games.js';
 // import { randomGame } from './data/games/random_number_game.js';
 
 const gamesContainer = document.querySelector('[data-games]');
-const renderGames = (games, container) => {
+export const renderGames = (games, container) => {
   const title = `
     <section class="games-title-section">
       <div class="container">
