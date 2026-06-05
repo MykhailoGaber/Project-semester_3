@@ -177,6 +177,7 @@ class BombGame {
     this.createModal('Зіграємо?', 'Почати гру!', () => {
       const modal = this.gameArea.querySelector('.bonus-game__modal');
       modal.classList.remove('show');
+      modal.remove();
       this.init();
     });
   }

@@ -1,0 +1,22 @@
+.games-title {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-text-primary);
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.games-title-section {
+  height: 101px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.games-title-section::after {
+  position: absolute;
+  content: '';
+  width: 536px;
+  height: 1px;
+  background-color: var(--color-text-primary);
+  bottom: 0;
+}

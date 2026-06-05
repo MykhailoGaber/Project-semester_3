@@ -5,6 +5,14 @@ import { games } from './data/data_games.js';
 
 const gamesContainer = document.querySelector('[data-games]');
 const renderGames = (games, container) => {
+  const title = `
+    <section class="games-title-section">
+      <div class="container">
+        <h2 class="games-title">Популярні інетрактивні ігри</h2>
+      </div>
+    </section>
+  `;
+
   const html = games.reduce((acc, game) => {
     const gameHTML = `
     <section id="game-id_${game.id}" class="section">
@@ -18,7 +26,7 @@ const renderGames = (games, container) => {
     return acc;
   }, '');
 
-  container.innerHTML = html;
+  container.innerHTML = title + html;
   games.forEach(game => {
     if (game.init) {
       game.init();
