@@ -1,85 +1,41 @@
-body {
-  margin: 0;
-  padding: 0;
+.maxNumber__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: #ffffff;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    sans-serif;
 }
-
-.container {
-  max-width: 800px;
-  width: 100%;
-  padding: 40px 20px;
+.maxNumber__title {
   text-align: center;
-  border-top: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-}
-
-.title {
-  font-size: 24px;
   font-weight: 400;
-  color: #333333;
-  margin-bottom: 40px;
-}
-
-.input-group {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.number-input {
-  width: 180px;
-  padding: 15px 20px;
   font-size: 16px;
+  font-family: var(--font-main);
+  color: var(--color-text-primary);
+  margin-bottom: 36px;
+}
+.maxNumber__input-group {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  margin-bottom: 36px;
+}
+.maxNumber__input {
+  color: var(--color-text-tertiary);
+  background-color: var(--color-text-bg);
+  padding: 10px 20px;
+  border-radius: 20px;
+  visibility: visible;
   text-align: center;
-  border: none;
-  border-radius: 30px;
-  background-color: #dedede;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
-  color: #333333;
-  outline: none;
-  transition:
-    background-color 0.2s,
-    box-shadow 0.2s;
-
-  &::placeholder {
-    color: #888888;
-  }
-
-  &:focus {
-    background-color: #d0d0d0;
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  &[type='number'] {
-    -moz-appearance: textfield;
-  }
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
 }
-
-.result-text {
-  font-size: 18px;
-  color: #333333;
-  margin: 0;
+.maxNumber__result {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: var(--font-main);
+  color: var(--color-text-primary);
 }
-
-#max-result {
-  font-weight: 500;
+.random_number__line {
+  width: 536px;
+  height: 1px;
+  background-color: #000;
+  margin-bottom: 36px;
 }
