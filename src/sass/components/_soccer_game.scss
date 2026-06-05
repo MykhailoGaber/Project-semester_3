@@ -1,3 +1,12 @@
+.game__title {
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  font-size: 16px;
+  font-weight: 400;
+}
 .soccer__field {
   border: 2px solid #000;
   border-radius: 37px;
@@ -16,14 +25,47 @@
   height: 50px;
   position: absolute;
   transition:
-    top 0.8s cubic-bezier(0.17, 0.84, 0.44, 1),
-    left 0.8s cubic-bezier(0.17, 0.84, 0.44, 1),
-    transform 0.8s cubic-bezier(0.17, 0.84, 0.44, 1);
+    top 1s cubic-bezier(0.17, 0.84, 0.44, 1),
+    left 1s cubic-bezier(0.17, 0.84, 0.44, 1),
+    transform 1s cubic-bezier(0.17, 0.84, 0.44, 1);
   user-select: none;
+  pointer-events: none;
 }
 .soccer__line {
-  width: 536px;
-  height: 1px;
-  background-color: #000;
-  margin-top: 36px;
+  width: 470px;
+}
+@media screen and (max-width: 768px) {
+  .game__title {
+    font-size: 12px;
+  }
+  .soccer__field {
+    width: 470px;
+    height: 160px;
+  }
+  .soccer__ball {
+    width: 35px;
+    height: 35px;
+  }
+  .soccer__line {
+    width: 500px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 36px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .game__title {
+    font-size: 9px;
+  }
+  .soccer__field {
+    width: 320px;
+    height: 120px;
+  }
+  .soccer__ball {
+    width: 25px;
+    height: 25px;
+  }
+  .soccer__line {
+    width: 300px;
+  }
 }
