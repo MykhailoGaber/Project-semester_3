@@ -3,10 +3,10 @@ import searchIcon from '../../../images/search-icon.png';
 export const randomGame = () => {
   const gamesContainer = document.querySelector('.game-id_2');
   const gameHtml = `
-    <h3 class="game__title">вгадай число,яке загадав комп'ютер</h3>
+    <h3 class="game__title">Вгадай число,яке загадав комп'ютер</h3>
          <div class="random_number__inputTextContainer">
            <div class="random_number__input-container">
-      <input type="number" id="random_number__input" placeholder="Введіть число " />
+      <input type="number" class="random_number__input" placeholder="Введіть число " />
     <button class="random_number__button">
       <img src="${searchIcon}" class="random_number__img" alt="button" />
     </button>
@@ -25,7 +25,7 @@ export const randomGame = () => {
 
   randomInt(1, 10);
   let numberToGuess = randomInt(min, max);
-  const input = document.querySelector('#random_number__input');
+  const input = document.querySelector('.random_number__input');
   const text = document.querySelector('.random_number__gues');
   const button = document.querySelector('.random_number__button');
   const handleClick = () => {
@@ -44,7 +44,7 @@ export const randomGame = () => {
       numberToGuess = randomInt(min, max);
     } else {
       text.style.color = 'var( --color-text-fail)';
-      text.textContent = `Ви не вгадали число(${numberToGuess}),спробуйте ще раз`;
+      text.textContent = `Ви програли, комп’ютер загадав(${numberToGuess})`;
       numberToGuess = randomInt(min, max);
     }
   };
