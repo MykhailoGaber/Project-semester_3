@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: center;
   background-position: center;
-  background-color: var(--color-text-primary);
+  background-color: #000000;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -74,8 +74,8 @@
   width: 182px;
   height: 35px;
   border-radius: 20px;
-  background-color: var(--color-text-primary);
-  color: var(--color-bg-primary);
+  background-color: #000000;
+  color: #ffffff;
   cursor: pointer;
 }
 

@@ -237,6 +237,8 @@
 }
 
 body:has(#changeTheme:checked) {
-  --color-bg-primary: #555555;
+  --color-bg-primary: #333333;
   --color-text-primary: #ffffff;
+  --color-text-tertiary: #ffffff;
+  --color-text-bg: #000000;
 }
