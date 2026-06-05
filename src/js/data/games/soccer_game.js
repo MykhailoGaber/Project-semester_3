@@ -14,8 +14,8 @@ export const soccerGame = () => {
   gamesContainer.innerHTML = gameHtml;
   const divBall = document.querySelector('.soccer__ball');
   const field = document.querySelector('.soccer__field');
-  divBall.style.top = `80px`;
-  divBall.style.left = `330px`;
+  divBall.style.top = `50px`;
+  divBall.style.left = `150px`;
   let ballRotate = 0;
   divBall.style.transform = `rotate(${ballRotate}deg)`;
   const handleBallAround = event => {
@@ -25,8 +25,10 @@ export const soccerGame = () => {
       const posY = event.offsetY;
       console.log(posX, posY);
       divBall.style.display = 'flex';
-      divBall.style.top = `${posY}px`;
-      divBall.style.left = `${posX}px`;
+      const ballWidth = divBall.offsetWidth;
+      const ballHeight = divBall.offsetHeight;
+      divBall.style.left = `${posX - ballWidth / 2}px`;
+      divBall.style.top = `${posY - ballHeight / 2}px`;
       ballRotate += 400;
       divBall.style.transform = `rotate(${ballRotate}deg)`;
     }
