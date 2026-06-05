@@ -32,7 +32,9 @@
   pointer-events: none;
 }
 .soccer__line {
+  background-color: var(--color-text-primary);
   width: 470px;
+  margin-top: 36px;
 }
 @media screen and (max-width: 768px) {
   .game__title {

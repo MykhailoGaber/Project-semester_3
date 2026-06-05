@@ -17,7 +17,7 @@
   border-radius: 20px;
   visibility: visible;
   text-align: center;
-  box-shadow: 3px 3px 0px 0px grey;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease;
 }
 
@@ -40,11 +40,11 @@
 }
 
 .calc-button-style {
-  background-color: var(--color-text-primary);
+  background-color: #000000;
   padding: 5px 10px;
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  color: var(--color-bg-primary);
+  color: #ffffff;
   display: flex;
   text-align: center;
   transition: 0.3s ease;
