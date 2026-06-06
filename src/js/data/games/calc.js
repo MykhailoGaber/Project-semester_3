@@ -1,49 +1,47 @@
+import searchIcon from '../../../images/calc_img.svg';
 export const timeCalculator = () => {
-    const gamesContainer = document.querySelector('.game-id_5');
+  const gamesContainer = document.querySelector('.game-id_5');
 
-    const gameHtml = `
-    <h3 class="game__title">Калькулятор часу</h3>
+  const calculatorHtml = `
+    <h3 class="time-calculator-title">Калькулятор часу</h3>
 
-    <div class="time-calc">
-      <input
-        type="number"
-        class="time-input"
-        placeholder="Введіть число"
-      >
+    <div class="time-calculator">
 
-      <button type="button" class="time-btn">
-      </button>
+      <div class="time-input-wrapper">
+        <input
+          type="number"
+          class="time-input"
+          placeholder="Введіть число"
+        />
 
-      <div class="time-line"></div>
+        <button type="button" class="time-search-btn">
+        <img src="${searchIcon}" class="calc-img" alt="button" />
+        </button>
+      </div>
 
-      <span class="time-result">
-        3 дн. 15:45:01
-      </span>
+      <div class="time-divider"></div>
+
+      <p class="time-result"></p>
+
     </div>
+    <div class="line"></div>
   `;
 
-    gamesContainer.innerHTML = gameHtml;
+  gamesContainer.innerHTML = calculatorHtml;
 
-    const input = document.querySelector('.time-input');
-    const button = document.querySelector('.time-btn');
-    const result = document.querySelector('.time-result');
+  const input = document.querySelector('.time-input');
+  const button = document.querySelector('.time-search-btn');
+  const result = document.querySelector('.time-result');
+  result.textContent = '0 дн. 00:00:00';
+  button.addEventListener('click', () => {
+    const value = Number(input.value);
 
-    button.addEventListener('click', () => {
-        const days = Number(input.value);
+  
 
-        if (isNaN(days) || input.value === '') {
-            result.textContent = 'Помилка';
-            return;
-        }
+    const days = Math.floor(value / 24);
+    const hours = value % 24;
 
-        const totalSeconds = days * 86400;
-
-        const d = Math.floor(totalSeconds / 86400);
-        const h = Math.floor((totalSeconds % 86400) / 3600);
-        const m = Math.floor((totalSeconds % 3600) / 60);
-        const s = totalSeconds % 60;
-
-        result.textContent =
-            `${d} дн. ${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-    });
+    result.textContent =
+      `${days} дн. ${String(hours).padStart(2, '0')}:00:00`;
+  });
 };
