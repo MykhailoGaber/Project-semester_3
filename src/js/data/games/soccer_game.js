@@ -2,6 +2,7 @@ import ball from '../../../images/ball.png';
 export const soccerGame = () => {
   const gamesContainer = document.querySelector('.game-id_7');
   const gameHtml = `
+        <div class="soccer__line-top"></div>
       <h3 class="game__title">Футбол</h3>
       <div class="soccer__field">
         <div class="soccer__ball">
