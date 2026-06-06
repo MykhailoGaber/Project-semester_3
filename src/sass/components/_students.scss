@@ -18,11 +18,17 @@
 .students_name {
   margin: 20px 0 15px 0;
 }
+//====swiper====
 
 .swiper-slide {
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+.students_swiper {
+  overflow: hidden;
+  width: 100%;
 }
 
 .students_title {
@@ -37,6 +43,7 @@
   top: 50px;
   transform: translateY(-50%);
   font-size: 40px;
+  transform: scale(0.9);
   transition: color 0.3s ease;
 
   &:hover {
@@ -68,7 +75,7 @@
   height: 3px;
   background-color: #797979;
 }
-
+//====line====
 .game-id_10 {
   position: relative;
 }

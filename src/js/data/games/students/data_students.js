@@ -2,6 +2,9 @@
 import photoMuhailo from '../../../../images/ourTeam/muhailo.png';
 import photoRenat from '../../../../images/ourTeam/renat.png';
 import photoSofia from '../../../../images/ourTeam/sofia.png';
+import photoRomanH from '../../../../images/ourTeam/roman.png';
+import photoRomaK from '../../../../images/ourTeam/romanK.jpg';
+import photoUnknown from '../../../../images/ourTeam/unknown.jpg';
 
 export const students = [
   {
@@ -23,18 +26,19 @@ export const students = [
       '||Developer|| Зробила секції: header, calculator та наша команда + перемикач темна тема  ',
   },
   {
-    photo: '#',
+    photo: photoRomanH,
     name: 'Ходосов Роман',
-    description: '#',
+    description:
+      '||Developer|| Зробив секції: вгадай число яке загадав комп`ютер, футбол та дизайн темної теми',
   },
   {
-    photo: '#',
-    name: 'Пирогов Святослав',
-    description: '#',
-  },
-  {
-    photo: '#',
+    photo: photoRomaK,
     name: 'Кучер Роман',
-    description: '#',
+    description: '||Developer|| Зробив секції: калькулятор часу',
+  },
+  {
+    photo: photoUnknown,
+    name: 'Пирогов Святослав',
+    description: '||Developer|| Зробив секції: max-number',
   },
 ];
