@@ -10,6 +10,7 @@ import { ourTeam } from './games/students/students-section.js';
 import { initScintistsSorting } from './games/scientists/scientists-sorting.js';
 import { initBonusGame } from './games/bomb-game.js';
 import { initLeapYear } from './games/leap-year.js';
+import { timeCalculator } from './games/calc.js';
 export const games = [
   {
     init: initLeapYear,
@@ -36,6 +37,7 @@ export const games = [
     category: 'numerical',
   },
   {
+    init: timeCalculator,
     id: 5,
     name: 'Калькулятор часу',
     category: 'numerical',

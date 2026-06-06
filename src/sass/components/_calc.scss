@@ -1,0 +1,78 @@
+.time-calculator-title {
+    text-align: center;
+    margin-bottom: 36px;
+    font-weight: 400;
+        font-size: 16px;
+        margin-top: 36px;
+}
+
+.time-calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.time-input-wrapper {
+    display: flex;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.time-input {
+background: #d7d7d7;
+    border-radius: 20px 0 0 20px;
+    width: 115px;
+    height: 35px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 12px;
+    color: #7e7e7e;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 0;
+    padding: 0;
+}
+
+.time-search-btn {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.calc-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    display: block;
+    object-fit: cover;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.time-divider {
+    width: 180px;
+    border-top: 2px dashed #000;
+}
+
+.time-result {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-primary);
+}
+.line {
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 36px;
+}
