@@ -1,0 +1,70 @@
+//ANIMATIONS
+// ==============from right to the center============
+@keyframes slideInFromRight {
+  0% {
+    transform: translate(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+
+// // .game-id_1,
+// // .game-id_3 {
+// //   animation: slideInFromRight backwards;
+// //   animation-timeline: view();
+// //   animation-range-start: cover 0%;
+// //   animation-range-end: cover 50%;
+// // }
+
+// @keyframes slideInFromRight {
+//   from {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
+
+//   to {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+.game-id_1 {
+  animation: slideInFromRight 2s ease;
+}
+
+.game-id_3,
+.game-id_5,
+.game-id_7,
+.game-id_9 {
+  animation-name: slideInFromRight;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+// ==============from left to the center============
+@keyframes slideInFromLeft {
+  0% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+
+.game-id_2 {
+  animation: slideInFromLeft 2s ease;
+}
+
+.game-id_4,
+.game-id_6,
+.game-id_8,
+.game-id_11 {
+  animation-name: slideInFromLeft;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}

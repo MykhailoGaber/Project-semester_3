@@ -8,13 +8,10 @@ const savedName = localStorage.getItem('username');
 
 if (savedName) {
   if (nameOutput) nameOutput.textContent = savedName;
-  if (nameModal) nameModal.close();
-} else if (nameModal) {
-  nameModal.close();
+} else {
   nameModal.showModal();
   body.style.overflow = 'hidden';
 }
-
 nameForm.addEventListener('submit', event => {
   event.preventDefault();
 

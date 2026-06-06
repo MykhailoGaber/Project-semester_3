@@ -3,7 +3,7 @@ import { students } from './data_students.js';
 export const ourTeam = () => {
   const gameContainer = document.querySelector('.game-id_10');
   const gameHtml = `
- <h3 class="div_title" >Наша команда</h3>
+ <h3 class="game__title" >Наша команда</h3>
  <div class="students_swiper">
           <ul class="swiper-wrapper">
           ${students
